@@ -7,6 +7,8 @@ Crash in gms vision when try to detect face on Android 4.4.4 and below, with ima
 2. build and install app.  
 3. press button `detect crash`  
 
+If I change images size from 102x1295 -> 102x1296, it doesn't crash anymore.
+
 Crash log:  
 ```
 A/libc: Fatal signal 11 (SIGSEGV) at 0xd5dfdde9 (code=1), thread 26906 (pool-1-thread-1)
