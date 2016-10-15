@@ -42,11 +42,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void detectOn(String thumbnailFile) {
         if (mDetector == null) {
-
-            if (BuildConfig.LOGGING) {
-                Log.e(TAG, "Build face detector.");
-            }
-
             Log.d(TAG, "Build face detector started.");
             mDetector = new FaceDetector.Builder(this)
                     .setTrackingEnabled(false)
